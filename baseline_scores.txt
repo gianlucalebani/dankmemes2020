@@ -1,0 +1,63 @@
+TEAM: baseline
+TASK: task1
+RUN: run1
+
+Sanity Check:
+- number of missing Labels:0
+- number of Labels NOT belonging to the test set:0
+
+Model Evaluation:
+- PRECISION: 0.525
+- RECALL: 0.5147
+- F1 SCORE: 0.5198
+
+******************************************************************************* 
+TEAM: baseline
+TASK: task2
+RUN: run1
+
+Sanity Check:
+- number of missing Labels:0
+- number of Labels NOT belonging to the test set:0
+
+Model Evaluation:
+- PRECISION: 0.8958
+- RECALL: 0.4095
+- F1 SCORE: 0.5621
+
+******************************************************************************* 
+TEAM: baseline
+TASK: task3_labelled
+RUN: run1
+
+Sanity Check:
+- number of missing Labels:0
+- number of Labels NOT belonging to the test set:0
+
+Model Evaluation:
+- MACRO-AVERAGED PRECISION: 0.096
+- MACRO-AVERAGED RECALL: 0.2
+- MACRO-AVERAGED F1 SCORE: 0.1297
+
+******************************************************************************* 
+TEAM: baseline
+TASK: task3_unlabelled
+RUN: run1
+
+Sanity Check:
+- number of missing Labels:0
+- number of Labels NOT belonging to the test set:0
+
+Model Evaluation:
+- PRECISION: 0.3479
+- RECALL: 0.0353
+- F1 SCORE: 0.0641
+
+******************************************************************************* 
+TEAM: baseline
+TASK: task3_unlabelled_distances
+RUN: run1
+
+Silhouette Score: 0.785
+
+******************************************************************************* 
