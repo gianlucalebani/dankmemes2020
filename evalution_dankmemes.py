@@ -272,7 +272,7 @@ def evaluation(results, gold, output_file):
                     if_file2 = file2id[file2]
                     distances[id_file1, if_file2] = dist
                     distances[if_file2, id_file1] = dist
-ì
+
                 # let's check if there are nans in our matrix
                 if np.isnan(distances).sum() > 0:
                     warning = "Warning: it looks some pairwise distances are "\
