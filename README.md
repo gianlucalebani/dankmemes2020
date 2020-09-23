@@ -34,7 +34,11 @@ The format of the baselines are identical to those of the submission files.
 
 ## Dependencies
 
-The `requirements.txt` lists the Python libraries needed to run the evaluation script. To install them, please run:
+To run the evaluation script you need:
+
+- **Python 3.6+**
+
+- The  lists the libraries in `requirements.txt`. To install them, please run:
 
 ```
 pip install -r requirements.txt
