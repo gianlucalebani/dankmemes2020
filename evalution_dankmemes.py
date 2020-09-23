@@ -63,7 +63,8 @@ def extract_metadata(resfile):
 
     try:
         metadata["task_name"] = spl_name[1]
-        metadata["team_name"] = "-".join(spl_name[2:-1])  # in case someone used the hyphen in the team name
+		# in case someone used the hyphen in the team name
+        metadata["team_name"] = "-".join(spl_name[2:-1])  
         metadata["run_id"] = spl_name[-1]
     except IndexError:
         return None
@@ -213,7 +214,7 @@ def evaluation(results, gold, output_file):
                             f'- MACRO-AVERAGED RECALL: {round(rec, 4)}',
                             f'- MACRO-AVERAGED F1 SCORE: {round(f1, 4)}\n\n']))
     
-                # when dealing with clustering, P, R & F1 is calculated 
+                # when dealing with clustering, P, R & F1 are calculated 
                 # following Manning et al (2008) 
                 # see https://nlp.stanford.edu/IR-book/html/htmledition/evaluation-of-clustering-1.html
                 else:
@@ -261,7 +262,7 @@ def evaluation(results, gold, output_file):
                 
                 outfile.write(heading) 
                 
-                # Let's rearrange the distances in result_file in a square matrix
+                # let's rearrange the distances in result_file in a square matrix
                 sample_size = len(labels_df.index)
                 distances = np.empty([sample_size, sample_size])
                 distances[:] = np.NaN
@@ -324,14 +325,14 @@ if __name__ == "__main__":
         else:
             raise ValueError('Unhandled option')
                         
-    # Check if all the non-optional parameters have been passed
+    # check if all the non-optional parameters have been passed
     if not all([results_folder, gold_folder]):
         raise IndexError('A directory path is missing')
 
-    # Check if the results files in the results folder are properly formatted
+    # check if the results files in the results folder are properly formatted
     filtered_results = sanity_check(results_folder)
     
-    # Proper evaluation is performed
+    # proper evaluation is performed
     evaluation(filtered_results, gold_folder, output_file)
     
     

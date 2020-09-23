@@ -14,7 +14,7 @@ Please check the guidelines are available both in this repository (cf. `guidelin
 
 ## Baselines
 
-The folder `baselines` contains 4 different baselines, one for each task. 
+The folder `baselines` contains 5 different baselines, one for each task. 
 
 The format of the baselines are identical to those of the submission files. 
 
